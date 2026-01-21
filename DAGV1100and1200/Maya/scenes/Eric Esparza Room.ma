@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: Eric Esparza Room.ma
-//Last modified: Tue, Jan 20, 2026 05:25:24 PM
+//Last modified: Tue, Jan 20, 2026 05:43:14 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "4EC45E34-468F-D3A8-B2C8-43A6AFB2CA77";
+fileInfo "UUID" "BAD82B64-4A1E-EF68-39CC-DDB340CAAA49";
 createNode transform -s -n "persp";
 	rename -uid "90D034B1-4962-1DD2-63C5-52814BDA01A4";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.5836228746758492 11.575829793347593 14.479514131415085 ;
-	setAttr ".r" -type "double3" -10.538352729602634 14.199999999998811 -2.0504989539943695e-16 ;
+	setAttr ".t" -type "double3" 30.512842760789013 26.191286745657418 54.718255295083871 ;
+	setAttr ".r" -type "double3" -15.938352729602745 26.999999999999108 4.4620249615465914e-16 ;
 	setAttr ".rp" -type "double3" 3.5527136788005009e-15 0 -7.1054273576010019e-15 ;
 	setAttr ".rpt" -type "double3" 7.1131564254628985e-15 -9.4120024499733793e-15 6.9444633549289538e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 14.017091853825587;
+	setAttr ".coi" 62.559762948073072;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2680,7 +2680,7 @@ createNode polyTweak -n "polyTweak8";
 	setAttr -s 4 ".tk[24:27]" -type "float3"  0 -0.0076947445 -0.0001650512
 		 0 -0.0076947445 -0.0001650512 0 0.0076947445 0.0001650512 0 0.0076947445 0.0001650512;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "E2AC0900-47BC-A4A0-ADD1-F89CDED12E99";
+	rename -uid "5187FE61-4053-1C12-FAD9-088B3480CD12";
 	setAttr ".pee" yes;
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -423.01585620673313 -289.68252817159026 ;
