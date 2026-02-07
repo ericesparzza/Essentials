@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: BookShelf.ma
-//Last modified: Mon, Jan 26, 2026 04:45:38 PM
+//Last modified: Wed, Feb 04, 2026 01:32:22 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "mtoa" "5.4.8.2";
@@ -10,12 +10,10 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "19518D6B-4053-678C-8858-4CBCA48E7BA1";
-createNode transform -n "pCube11";
+fileInfo "UUID" "43A391B9-4809-A7A2-BDAA-568FB9F120AE";
+createNode transform -n "BookShelfMesh";
 	rename -uid "79A9A23A-4683-690D-4DB3-588C16A2DE92";
-	setAttr ".rp" -type "double3" 6.4478559357584126 6.5065529384499161 -5.8059707851508637 ;
-	setAttr ".sp" -type "double3" 6.4478559357584126 6.5065529384499161 -5.8059707851508637 ;
-createNode mesh -n "pCube11Shape" -p "pCube11";
+createNode mesh -n "BookShelfMesh" -p "|BookShelfMesh";
 	rename -uid "E94136E6-418D-B846-DC2F-B288BC244FBE";
 	setAttr -k off ".v";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:95]";
@@ -69,6 +67,33 @@ createNode mesh -n "pCube11Shape" -p "pCube11";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr -s 96 ".pt[0:95]" -type "float3"  -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 
+		5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 
+		0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707 
+		-6.4478559 0 5.8059707 -6.4478559 0 5.8059707 -6.4478559 0 5.8059707;
 	setAttr -s 96 ".vt[0:95]"  2.66036463 0.19568813 -7.82661438 2.67284012 0.19568793 -3.76211929
 		 2.66036391 0.32230493 -7.82661057 2.67284012 0.32230508 -3.76211834 10.22287178 0.32230493 -7.849823
 		 10.23534966 0.32230502 -3.78532314 10.22287369 0.19568828 -7.849823 10.23534775 0.1956879 -3.78532219
@@ -342,13 +367,14 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
+	setAttr -s 2 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.55612242 0.55612242 0.55612242 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 50 ".dsm";
+	setAttr -s 21 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 40 ".gn";
+	setAttr -s 11 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -371,10 +397,13 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "groupId26.id" "pCube11Shape.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "pCube11Shape.iog.og[0].gco";
-connectAttr "groupId20.id" "pCube11Shape.ciog.cog[0].cgid";
-connectAttr "pCube11Shape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "pCube11Shape.iog.og[0]" ":initialShadingGroup.dsm" -na;
+connectAttr "groupId26.id" "|BookShelfMesh|BookShelfMesh.iog.og[0].gid";
+connectAttr ":initialShadingGroup.mwc" "|BookShelfMesh|BookShelfMesh.iog.og[0].gco"
+		;
+connectAttr "groupId20.id" "|BookShelfMesh|BookShelfMesh.ciog.cog[0].cgid";
+connectAttr "|BookShelfMesh|BookShelfMesh.ciog.cog[0]" ":initialShadingGroup.dsm"
+		 -na;
+connectAttr "|BookShelfMesh|BookShelfMesh.iog.og[0]" ":initialShadingGroup.dsm" 
+		-na;
 connectAttr "groupId26.msg" ":initialShadingGroup.gn" -na;
 // End of BookShelf.ma
