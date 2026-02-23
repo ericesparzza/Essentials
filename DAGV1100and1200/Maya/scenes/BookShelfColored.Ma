@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: BookShelf.ma
-//Last modified: Thu, Feb 19, 2026 01:41:09 PM
+//Name: BookShelfColored.Ma
+//Last modified: Thu, Feb 19, 2026 01:42:50 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiImagerDenoiserOidn"
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202512041342-b90de33065";
 fileInfo "osv" "Windows 10 Home v2009 (Build: 19045)";
-fileInfo "UUID" "923293C4-410E-2CB2-AB0A-05B9E0BBAAA8";
+fileInfo "UUID" "0E9D9853-41F1-FC7A-9406-3FA9C344A283";
 createNode transform -n "BookShelfMesh";
 	rename -uid "79A9A23A-4683-690D-4DB3-588C16A2DE92";
 createNode mesh -n "BookShelfMesh" -p "|BookShelfMesh";
@@ -347,13 +347,13 @@ createNode mesh -n "BookShelfMesh" -p "|BookShelfMesh";
 createNode transform -s -n "persp";
 	rename -uid "EC150B1D-482B-6B29-7BF6-D8A2547C17CB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.0118219113146614 10.189040222419893 24.662882462855201 ;
-	setAttr ".r" -type "double3" -8.1383527296019409 -15.799999999999399 -2.0659005436216586e-16 ;
+	setAttr ".t" -type "double3" -26.018359665147532 17.82021115581723 36.495767803019291 ;
+	setAttr ".r" -type "double3" -14.138352729602166 -35.39999999999953 -1.9509546221649485e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "8DD02150-4EE1-B8F0-E5EB-F388EC794A6E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 26.01290176010454;
+	setAttr ".coi" 46.317307966545563;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -416,20 +416,20 @@ createNode groupId -n "groupId20";
 	rename -uid "3732A47F-4E9E-F55F-1E03-2EBF06F5D184";
 	setAttr ".ihi" 0;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "18D059AF-4AEA-BF90-7044-1C871D8412B3";
+	rename -uid "6692D487-468C-4BF4-5280-B984541A93A2";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "DFF8CF68-46D5-8E6D-DEF9-69BE1F4402D9";
+	rename -uid "4DD11B11-4F8C-B181-09DD-7EA811FBB23F";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "BB4CB8C3-4D37-9069-BD6F-629284E8010F";
+	rename -uid "B8FA956B-4F0E-6EBC-177D-84AEB74429EE";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "1CAC6F68-43B7-F68B-6578-1A991C4FD06E";
+	rename -uid "18DFE042-4CE2-B20F-817A-FBBB52CCA913";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "6EF37B8B-4AE8-EB18-4425-14B94E7C9D3A";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "5C94BC58-4CF5-C321-6D60-3486242D3F80";
+	rename -uid "472FA71F-499A-143E-40CB-81B308223FCC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "35772C3C-429D-DA3A-1ADE-99B677AE20B3";
 	setAttr ".g" yes;
@@ -540,6 +540,8 @@ select -ne :defaultColorMgtGlobals;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 connectAttr "groupId26.id" "|BookShelfMesh|BookShelfMesh.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "|BookShelfMesh|BookShelfMesh.iog.og[0].gco"
 		;
@@ -562,4 +564,4 @@ connectAttr "|BookShelfMesh|BookShelfMesh.ciog.cog[0]" ":initialShadingGroup.dsm
 connectAttr "|BookShelfMesh|BookShelfMesh.iog.og[0]" ":initialShadingGroup.dsm" 
 		-na;
 connectAttr "groupId26.msg" ":initialShadingGroup.gn" -na;
-// End of BookShelf.ma
+// End of BookShelfColored.Ma
